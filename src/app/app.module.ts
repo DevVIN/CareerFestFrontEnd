@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { MatRippleModule } from '@angular/material';
 import { NgModule, Injectable } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, Headers, BaseRequestOptions, RequestOptions } from '@angular/http';
@@ -28,6 +29,7 @@ import { SharedService } from './services/shared.service';
   ],
   imports: [
     BrowserModule,
+    MatRippleModule,
     AppRoutingModule,
     CommonModule,
     FormsModule,
@@ -36,7 +38,7 @@ import { SharedService } from './services/shared.service';
     AppRoutingModule,
 
   ],
-  providers: [appRoutingProviders,SharedService],
+  providers: [appRoutingProviders, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
